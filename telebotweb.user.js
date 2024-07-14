@@ -6,6 +6,7 @@
 // @author       You
 // @match        *.whitechain.io/*
 // @match        *.hamsterkombat.io/*
+// @match        *.hamsterkombatgame.io/*
 // @match        *.cex.io/*
 // @match        *.tapswap.club/*
 // @match        *://*.memefi.club/*
