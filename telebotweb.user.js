@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tele Bot on Web
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Fake Android to play Tele Bot on Web
 // @author       You
 // @match        *.whitechain.io/*
