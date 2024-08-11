@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TapSwapBot
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  AutoClick
 // @author       anonymous
 // @match        *.tapswap.club/*
@@ -132,14 +132,14 @@ const buttonActions = [
     { selector: '#app > div._drawerContainer_1v85a_1 > div._actionContent_1v85a_75 > button', delay: randomDelay(1000, 3000) },
 
     // Boost Tank
-    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button', delay: randomDelay(12000, 14000) },
+    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button:nth-child(2)', delay: randomDelay(1000, 3000) },
     { selector: '#app > div._container_1jw9i_1._page_1jw9i_46 > div._container_jn9s0_1 > div._stack_sem72_1 > div > button:nth-child(2)', delay: randomDelay(1000, 3000) },
 
     // Got It button
     { selector: '#app > div._container_1jw9i_1._page_1jw9i_46 > div._drawerContainer_1v85a_1 > div._actionContent_1v85a_75 > button', delay: randomDelay(1000, 3000) },
 
     // Boost Guru
-    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button', delay: randomDelay(1000, 3000) },
+    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button:nth-child(2)', delay: randomDelay(1000, 3000) },
     { selector: '#app > div._container_1jw9i_1._page_1jw9i_46 > div._container_jn9s0_1 > div._stack_sem72_1 > div > button:nth-child(1)', delay: randomDelay(1000, 3000) },
 
     // Got It button
@@ -167,7 +167,7 @@ async function runScenario() {
         checkCoinAndClick();
         console.log(`Function X (checkCoinAndClick) run ${i + 1} times`);
         // Step 2: Run checkCoinAndClick after random seconds
-        await new Promise(resolve => setTimeout(resolve, randomDelay(30000, 35000)));
+        await new Promise(resolve => setTimeout(resolve, randomDelay(35000, 40000)));
 
         // Step 3: Click buttons 2 to 9 in sequence with their specific delays
         for (let j = 1; j < buttonActions.length; j++) { // Start from 1 because button 0 is already clicked
