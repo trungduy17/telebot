@@ -129,17 +129,19 @@ function randomDelay(min, max) {
 // HTML selectors and delays for each button
 const buttonActions = [
     // Auto claim
-    { selector: '#app > div._drawerContainer_1v85a_1 > div._actionContent_1v85a_75 > button', delay: randomDelay(2000, 3000) },
+    { selector: '#app > div._drawerContainer_1v85a_1 > div._actionContent_1v85a_75 > button', delay: randomDelay(1000, 3000) },
 
     // Boost Tank
-    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button:nth-child(2)', delay: randomDelay(1000, 3000) },
+    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button:nth-child(2)', delay: randomDelay(1000, 2000) },
+    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button', delay: randomDelay(1000, 2000) },
     { selector: '#app > div._container_1jw9i_1._page_1jw9i_46 > div._container_jn9s0_1 > div._stack_sem72_1 > div > button:nth-child(2)', delay: randomDelay(1000, 3000) },
 
     // Got It button
     { selector: '#app > div._container_1jw9i_1._page_1jw9i_46 > div._drawerContainer_1v85a_1 > div._actionContent_1v85a_75 > button', delay: randomDelay(1000, 3000) },
 
     // Boost Guru
-    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button:nth-child(2)', delay: randomDelay(1000, 3000) },
+    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button:nth-child(2)', delay: randomDelay(1000, 2000) },
+    { selector: '#app > div._container_1jw9i_1._main_1jw9i_27 > div._bottomContent_ghpd6_1 > div > div._wrapper_7h0ke_1 > div._rightBtn_7h0ke_15 > button', delay: randomDelay(1000, 2000) },
     { selector: '#app > div._container_1jw9i_1._page_1jw9i_46 > div._container_jn9s0_1 > div._stack_sem72_1 > div > button:nth-child(1)', delay: randomDelay(1000, 3000) },
 
     // Got It button
