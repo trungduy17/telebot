@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TapSwapBot
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  AutoClick
 // @author       anonymous
 // @match        *.tapswap.club/*
