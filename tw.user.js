@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TapSwapBot
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  AutoClick
 // @author       anonymous
 // @match        *.tapswap.club/*
@@ -128,6 +128,9 @@ function randomDelay(min, max) {
 
 // HTML selectors and delays for each button
 const buttonActions = [
+    // Waiting to reload
+    { selector: '#app > div._container_1jw9i_1._loading_1jw9i_56 > div._leaveContainer_b7w50_1 > div._buttons_b7w50_19 > button._button_fffa0_1._secondary_fffa0_21._large_fffa0_49', delay: randomDelay(10000, 11000) },
+
     // Auto claim
     { selector: '#app > div._drawerContainer_1v85a_1 > div._actionContent_1v85a_75 > button', delay: randomDelay(2000, 3000) },
 
@@ -161,18 +164,21 @@ function clickButtonBySelector(selector) {
 
 // Full scenario implementation
 async function runScenario() {
-    for (let i = 0; i < 8; i++) {
-        // Step 1: Wait some seconds and click button1
-        await new Promise(resolve => setTimeout(resolve, buttonActions[0].delay));
-        clickButtonBySelector(buttonActions[0].selector);
+    // Step 1: Wait some seconds and click
+    await new Promise(resolve => setTimeout(resolve, buttonActions[0].delay));
+    clickButtonBySelector(buttonActions[0].selector);
 
+    await new Promise(resolve => setTimeout(resolve, buttonActions[1].delay));
+    clickButtonBySelector(buttonActions[1].selector);
+    
+    for (let i = 0; i < 8; i++) {
         checkCoinAndClick();
         console.log(`Function X (checkCoinAndClick) run ${i + 1} times`);
         // Step 2: Run checkCoinAndClick after random seconds
         await new Promise(resolve => setTimeout(resolve, randomDelay(35000, 40000)));
 
         // Step 3: Click buttons 2 to 9 in sequence with their specific delays
-        for (let j = 1; j < buttonActions.length; j++) { // Start from 1 because button 0 is already clicked
+        for (let j = 2; j < buttonActions.length; j++) { // Start from 2 because button 0-1 is already clicked
             const delay = buttonActions[j].delay;
             await new Promise(resolve => setTimeout(resolve, delay));
             clickButtonBySelector(buttonActions[j].selector);
