@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TapSwapBot
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  AutoClick
 // @author       anonymous
 // @match        *.tapswap.club/*
@@ -129,7 +129,7 @@ function randomDelay(min, max) {
 // HTML selectors and delays for each button
 const buttonActions = [
     // Waiting to reload
-    { selector: '#app > div._container_1jw9i_1._loading_1jw9i_56 > div._leaveContainer_b7w50_1 > div._buttons_b7w50_19 > button._button_fffa0_1._secondary_fffa0_21._large_fffa0_49', delay: randomDelay(10000, 11000) },
+    { selector: '#app > div._container_1jw9i_1._loading_1jw9i_56 > div._leaveContainer_b7w50_1 > div._buttons_b7w50_19 > button._button_fffa0_1._secondary_fffa0_21._large_fffa0_49', delay: randomDelay(11000, 12000) },
 
     // Auto claim
     { selector: '#app > div._drawerContainer_1v85a_1 > div._actionContent_1v85a_75 > button', delay: randomDelay(2000, 3000) },
