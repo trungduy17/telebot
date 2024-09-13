@@ -72,7 +72,7 @@ console.error = console.warn = console.info = console.debug = () => { };
       soal = soal.replace("`", "");
       console.log("Sizif Question : ---" + soal + "---");
     fetch(
-  "https://github.com/trungduy17/telebot/raw/main/list.json"
+  "https://raw.githubusercontent.com/trungduy17/telebot/main/list.json"
 ).then(function (response) {
   response.text().then(function (text) {
     storedText = text;
