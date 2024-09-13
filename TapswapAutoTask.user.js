@@ -72,7 +72,7 @@ console.error = console.warn = console.info = console.debug = () => { };
       soal = soal.replace("`", "");
       console.log("Sizif Question : ---" + soal + "---");
     fetch(
-  "https://raw.githubusercontent.com/sizifart/TapswapAutoTaskClaimer/main/list.json"
+  "https://github.com/trungduy17/telebot/raw/main/list.json"
 ).then(function (response) {
   response.text().then(function (text) {
     storedText = text;
