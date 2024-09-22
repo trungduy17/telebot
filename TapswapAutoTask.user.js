@@ -208,6 +208,6 @@ function done() {
                backbutton.click();
           }, 2000);
       }
-    }, 3000);
+    }, 1000);
   });
 })();
