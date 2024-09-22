@@ -122,7 +122,7 @@ function done() {
           if (input) {
             input.focus();
           }
-        }, 1000);
+        }, 3000);
       }
     }
     ///// Close Messages And Go Tasks/////
@@ -208,8 +208,8 @@ function done() {
         claimm.click();
            setTimeout(function () {
                backbutton.click();
-          }, 2000);
+          }, 3000);
       }
-    }, 1000);
+    }, 2000);
   });
 })();
