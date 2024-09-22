@@ -122,7 +122,7 @@ function done() {
           if (input) {
             input.focus();
           }
-        }, 3000);
+        }, 1000);
       }
     }
     ///// Close Messages And Go Tasks/////
@@ -135,7 +135,7 @@ function done() {
       if (close1) {close1.click();}
       if (taskkk) {taskkk.click();}
       if (relod) {location.reload();}
-    }, 3000);
+    }, 2000);
 
 
     setInterval(function () {
@@ -208,8 +208,8 @@ function done() {
         claimm.click();
            setTimeout(function () {
                backbutton.click();
-          }, 3000);
+          }, 2000);
       }
-    }, 2000);
+    }, 1000);
   });
 })();
