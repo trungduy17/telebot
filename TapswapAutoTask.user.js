@@ -7,7 +7,9 @@
 // @match        https://app.tapswap.club/*
 // @icon         https://i.postimg.cc/7LJ24T7F/tapsw-aplogo.png
 // @grant        GM_webRequest
-// @homepage     https://github.com/sizifart
+// @downloadURL  https://github.com/trungduy17/telebot/raw/main/TapswapAutoTask.user.js
+// @updateURL    https://github.com/trungduy17/telebot/raw/main/TapswapAutoTask.user.js
+// @homepage     https://github.com/trungduy17/telebot
 // @require      https://code.jquery.com/jquery-3.7.1.min.js
 // ==/UserScript==
 (function () {
@@ -120,7 +122,7 @@ function done() {
           if (input) {
             input.focus();
           }
-        }, 1000);
+        }, 3000);
       }
     }
     ///// Close Messages And Go Tasks/////
@@ -133,7 +135,7 @@ function done() {
       if (close1) {close1.click();}
       if (taskkk) {taskkk.click();}
       if (relod) {location.reload();}
-    }, 2000);
+    }, 3000);
 
 
     setInterval(function () {
@@ -206,8 +208,8 @@ function done() {
         claimm.click();
            setTimeout(function () {
                backbutton.click();
-          }, 2000);
+          }, 3000);
       }
-    }, 1000);
+    }, 2000);
   });
 })();
