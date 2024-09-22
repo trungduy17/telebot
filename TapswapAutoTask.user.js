@@ -3,7 +3,7 @@
 // @namespace    https://github.com/sizifart/
 // @version      1.1
 // @description  Auto Claim Tasks TapSwapBot
-// @author       FoadDavoodi
+// @author       FoadDavoodi - Refactored by TD
 // @match        https://app.tapswap.club/*
 // @icon         https://i.postimg.cc/7LJ24T7F/tapsw-aplogo.png
 // @grant        GM_webRequest
