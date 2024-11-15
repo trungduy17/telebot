@@ -1,0 +1,24 @@
+{
+  "patterns": [
+    "*.whitechain.io/*",
+    "*.hamsterkombat.io/*",
+    "*.hamsterkombatgame.io/*",
+    "*.cex.io/*",
+    "*.tapswap.club/*",
+    "*://*.memefi.club/*",
+    "*.kibble.exchange/*",
+    "*.netlify.app/*",
+    "*.pxlvrs.io/*",
+    "*.gemz.fun/*",
+    "*.scroo-g.com/*",
+    "*.blum.codes/*",
+    "*.tomarket.ai/*",
+    "*.dapplab.xyz/*",
+    "*.digitaloceanspaces.com/*",
+    "*.ktnff.tech/*",
+    "*.wormfare.com/*",
+    "*.muskempire.io/*",
+    "*.rockyrabbit.io/*",
+    "*.birdton.site/*"
+  ]
+}
